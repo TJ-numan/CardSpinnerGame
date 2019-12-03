@@ -60,10 +60,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKF-Xz-hzc">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="133"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-rt-ld6">
-                                                        <rect key="frame" x="31" y="43" width="80" height="80"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-rt-ld6">
+                                                        <rect key="frame" x="14" y="16" width="103" height="101"/>
                                                         <color key="backgroundColor" red="0.078421689569999994" green="0.078436784450000005" blue="0.07841656357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="41"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                         <state key="normal" title="Roll" backgroundImage="D3">
                                                             <color key="titleColor" red="0.68563872579999996" green="0.51470619439999998" blue="0.1807719767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -73,8 +73,11 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="fBd-rt-ld6" secondAttribute="bottom" constant="16" id="0IQ-MW-a3Z"/>
                                                     <constraint firstItem="fBd-rt-ld6" firstAttribute="centerY" secondItem="uKF-Xz-hzc" secondAttribute="centerY" id="2Ld-7f-JrT"/>
-                                                    <constraint firstItem="fBd-rt-ld6" firstAttribute="centerX" secondItem="uKF-Xz-hzc" secondAttribute="centerX" id="Tlb-20-IeG"/>
+                                                    <constraint firstItem="fBd-rt-ld6" firstAttribute="leading" secondItem="uKF-Xz-hzc" secondAttribute="leading" constant="14" id="S5a-zM-6UF"/>
+                                                    <constraint firstItem="fBd-rt-ld6" firstAttribute="top" secondItem="uKF-Xz-hzc" secondAttribute="top" constant="16" id="TQf-xJ-hOy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fBd-rt-ld6" secondAttribute="trailing" constant="8" id="l67-vj-Tqx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuR-sx-StH">
@@ -248,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
         </scene>
     </scenes>
     <resources>
