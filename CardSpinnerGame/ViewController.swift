@@ -27,41 +27,34 @@ class ViewController: UIViewController {
     
     @IBAction func spin(_ sender: Any) {
         
-        for i in 0...14{
+        for _ in 0...14{
             let r = Int.random(in: 1...14)
-            print(r)
             PC1.image = UIImage(named: String(r))
-            player1.text = String(r)
-            print("\(i) :time")       }
+            player1.text = "Player 1 : " + String(r)
+             }
         
-        for i in 0...14{
+        for _ in 0...14{
             let r = Int.random(in: 1...14)
-            print(r)
             PC2.image = UIImage(named: String(r))
-            player2.text = String(r)
-            print("\(i) :time")       }
+            player2.text = "Player 2 : " + String(r)
+                }
         
-        for i in 0...14{
+        for _ in 0...14{
             let r = Int.random(in: 1...14)
-            print(r)
             PC3.image = UIImage(named: String(r))
-            player3.text = String(r)
-            print("\(i) :time")       }
+            player3.text = "Player 3 : " + String(r)
+                  }
         
 
         
-        for i in 0...14{
+        for _ in 0...14{
             let r = Int.random(in: 1...14)
-            print(r)
             PC4.image = UIImage(named: String(r))
-            player4.text = String(r)
-            print("\(i) :time")       }
+            player4.text = "Player 4 : " + String(r)
+                  }
         
         
     }
-    
-    
-    
     
 }
 
