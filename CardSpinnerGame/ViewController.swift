@@ -30,18 +30,21 @@ class ViewController: UIViewController {
         for _ in 0...14{
             let r = Int.random(in: 1...14)
             PC1.image = UIImage(named: String(r))
+            animate(imageView: PC1)
             player1.text = "Player 1 : " + String(r)
              }
         
         for _ in 0...14{
             let r = Int.random(in: 1...14)
             PC2.image = UIImage(named: String(r))
+            animate(imageView: PC2)
             player2.text = "Player 2 : " + String(r)
                 }
         
         for _ in 0...14{
             let r = Int.random(in: 1...14)
             PC3.image = UIImage(named: String(r))
+            animate(imageView: PC3)
             player3.text = "Player 3 : " + String(r)
                   }
         
@@ -50,10 +53,14 @@ class ViewController: UIViewController {
         for _ in 0...14{
             let r = Int.random(in: 1...14)
             PC4.image = UIImage(named: String(r))
+            animate(imageView: PC4)
             player4.text = "Player 4 : " + String(r)
                   }
         
         
+    }
+    func animate(imageView: UIView) -> Void {
+        UIView.transition(with: imageView, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
     }
     
 }
