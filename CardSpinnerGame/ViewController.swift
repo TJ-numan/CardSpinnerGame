@@ -59,8 +59,12 @@ class ViewController: UIViewController {
         
         
     }
-    func animate(imageView: UIView) -> Void {
+    func animate(imageView: UIImageView) -> Void {
         UIView.transition(with: imageView, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            imageView.image = UIImage(named: "D3")
+            UIView.transition(with: imageView, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        }
     }
     
 }
